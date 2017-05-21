@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 """
 Copyright (C) 2005,2007 Aaron Spike, aaron@ekips.org
@@ -32,10 +32,10 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 import cspsubdiv
 import cubicsuperpath
-import dxf_color
+from . import dxf_color
 import dxf_templates
 import inkex
-import object2path
+from . import object2path
 import pathmodifier
 import re
 import simplepath
@@ -59,7 +59,7 @@ class OpenSCADDXFEffect(object2path.ObjectToPath):
         self.dxf_color = dxf_color.DxfColor()
 
     def output(self):
-        print(self.dxf)
+        print((self.dxf))
 
     def dxf_add_codes(self, codes):
         lines = ''

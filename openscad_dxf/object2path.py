@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 """
 Converts objects to paths
@@ -32,7 +32,7 @@ __version__ = "0.0.1"
 __credits__ = """http://www.janthor.com"""
 __docformat__ = "restructuredtext de"
 
-import inkinkex
+from . import inkinkex
 import inkex
 import re
 

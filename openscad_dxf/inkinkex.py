@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 """
 Calls Inkscape from within an Inkscape extension.
@@ -58,7 +58,7 @@ __docformat__ = "restructuredtext de"
 
 
 import inkex
-import inkutils
+from . import inkutils
 
 import os
 import tempfile
